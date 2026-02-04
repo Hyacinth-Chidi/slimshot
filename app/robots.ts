@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://slimshot.app/sitemap.xml',
+    sitemap: 'https://slimshotai.vercel.app/sitemap.xml',
   }
 }

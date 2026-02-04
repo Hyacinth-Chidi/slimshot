@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://slimshot.app'), // Replace with actual domain
+  metadataBase: new URL('https://slimshotai.vercel.app'), // Replace with actual domain
   title: {
     default: 'SlimShot - AI-Powered Image Compression',
     template: '%s | SlimShot',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://slimshot.app',
+    url: 'https://slimshotai.vercel.app',
     title: 'SlimShot - Precision Image Compression',
     description: 'Optimize your images with quantum precision. 100% client-side, secure, and fast.',
     siteName: 'SlimShot',
