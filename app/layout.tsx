@@ -27,7 +27,10 @@ export const metadata: Metadata = {
   keywords: [
     'image compression', 'ai image optimizer', 'browser-based compression', 
     'avif converter', 'webp converter', 'privacy-focused', 'client-side', 
-    'slimshot', 'image optimization', 'web performance', 'photo compressor', 'converter', 'Ai image generator'
+    'slimshot', 'image optimization', 'web performance', 'photo compressor', 
+    'converter', 'Ai image generator', 'slimshotai',
+    'reduce image size', 'compress png', 'compress jpeg', 'online image compressor', 
+    'free image optimizer', 'shrink image size'
   ],
   authors: [{ name: 'SlimShot Team' }],
   creator: 'SlimShot',
