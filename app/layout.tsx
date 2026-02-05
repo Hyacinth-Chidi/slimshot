@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   },
   description: 'Engineering-grade image optimization running 100% in your browser. Privacy-focused, zero latency, and uncompromising quality. Support for AVIF, WebP, JPEG, and PNG.',
   keywords: [
+    'SlimShotAi','Slimshot AI','Slimshotai','Slimshot.ai',
     'image compression', 'ai image optimizer', 'browser-based compression', 
     'avif converter', 'webp converter', 'privacy-focused', 'client-side', 
     'slimshot', 'image optimization', 'web performance', 'photo compressor', 
