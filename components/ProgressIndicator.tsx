@@ -36,7 +36,7 @@ export function ProgressIndicator({
             cy="50"
             r="45"
             fill="none"
-            stroke="rgba(239, 68, 68, 0.1)"
+            stroke="rgba(99, 102, 241, 0.1)"
             strokeWidth="3"
           />
         </svg>
@@ -74,8 +74,8 @@ export function ProgressIndicator({
               x2="100%"
               y2="100%"
             >
-              <stop offset="0%" stopColor="#EF4444" />
-              <stop offset="100%" stopColor="#DC2626" />
+              <stop offset="0%" stopColor="#6366F1" />
+              <stop offset="100%" stopColor="#8B5CF6" />
             </linearGradient>
           </defs>
         </motion.svg>
@@ -93,7 +93,7 @@ export function ProgressIndicator({
                 repeat: status === 'processing' ? Infinity : 0,
                 duration: 0.8,
               }}
-              className="text-3xl font-bold text-red-500 font-mono"
+              className="text-3xl font-bold text-indigo-500 font-mono"
             >
               {status === 'complete' ? '✓' : `${progress}%`}
             </motion.div>
@@ -126,7 +126,7 @@ export function ProgressIndicator({
                 duration: 0.6,
                 delay: 0,
               }}
-              className="w-2 h-2 bg-red-500 rounded-full"
+              className="w-2 h-2 bg-indigo-500 rounded-full"
             />
             <motion.div
               animate={{ y: [0, -8, 0] }}
@@ -135,7 +135,7 @@ export function ProgressIndicator({
                 duration: 0.6,
                 delay: 0.2,
               }}
-              className="w-2 h-2 bg-red-500 rounded-full"
+              className="w-2 h-2 bg-indigo-500 rounded-full"
             />
             <motion.div
               animate={{ y: [0, -8, 0] }}
@@ -144,7 +144,7 @@ export function ProgressIndicator({
                 duration: 0.6,
                 delay: 0.4,
               }}
-              className="w-2 h-2 bg-red-500 rounded-full"
+              className="w-2 h-2 bg-indigo-500 rounded-full"
             />
           </div>
         )}

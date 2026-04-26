@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { DropZone } from '@/components/DropZone';
 import { ControlsPanel, ImageFormat } from '@/components/ControlsPanel';
 import { PreviewCompare } from '@/components/PreviewCompare';
@@ -164,9 +165,7 @@ export default function Home() {
           className="pointer-events-auto glass rounded-full px-6 py-3 flex items-center gap-6"
         >
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-orange-500 flex items-center justify-center shadow-lg shadow-primary/20">
-              <Zap className="w-4 h-4 text-white fill-white" />
-            </div>
+            <Image src="/icon.png" alt="SlimShot Logo" width={32} height={32} className="w-8 h-8 rounded-full shadow-lg shadow-indigo-500/20" />
             <span className="font-bold tracking-tight text-lg">SlimShot</span>
           </div>
           <div className="h-4 w-px bg-white/10" />
@@ -189,18 +188,7 @@ export default function Home() {
             >
               {/* Hero Section */}
               <div className="text-center max-w-4xl mx-auto space-y-8 pt-4">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8 }}
-                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-xs font-medium text-secondary-foreground backdrop-blur-sm"
-                >
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/40 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  V1.0 Private Beta
-                </motion.div>
+
 
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
@@ -236,7 +224,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 + i * 0.1 }}
-                    className="glass-subtle p-6 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors"
+                    className="glass-subtle p-6 rounded-2xl border border-slate-700 hover:bg-slate-800/50 transition-colors"
                   >
                     <item.icon className="w-6 h-6 text-primary mb-4" />
                     <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
@@ -304,7 +292,7 @@ export default function Home() {
                   <Button
                     onClick={handleReset}
                     variant="outline"
-                    className="w-full h-12 rounded-xl border-white/10 hover:bg-white/5 text-muted-foreground hover:text-foreground"
+                    className="w-full h-12 rounded-xl border-slate-700 hover:bg-slate-800/50 text-slate-400 hover:text-slate-50"
                   >
                     <RefreshCw className="w-4 h-4 mr-2" />
                     Process Another Image
@@ -330,18 +318,23 @@ export default function Home() {
       />
 
       {/* Footer */}
-      <footer className="border-t border-white/5 bg-black/20 backdrop-blur-lg mt-auto">
+      <footer className="border-t border-slate-800 bg-slate-900/50 backdrop-blur-lg mt-auto">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground">
-            © 2026 SlimShot AI. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <p className="text-xs text-muted-foreground">
+              © 2026 SlimShot AI. All rights reserved.
+            </p>
+            <a href="/privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              Privacy Policy
+            </a>
+          </div>
           
           <div className="flex gap-4">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/5">
-              <span className="text-xs font-medium text-muted-foreground">Open File</span>
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/50 border border-slate-700">
+              <span className="text-xs font-medium text-slate-400">Open File</span>
               <div className="flex gap-1">
-                <span className="text-[10px] bg-white/10 px-1.5 py-0.5 rounded text-foreground">⌘</span>
-                <span className="text-[10px] bg-white/10 px-1.5 py-0.5 rounded text-foreground">K</span>
+                <span className="text-[10px] bg-slate-700/50 px-1.5 py-0.5 rounded text-slate-50">⌘</span>
+                <span className="text-[10px] bg-slate-700/50 px-1.5 py-0.5 rounded text-slate-50">K</span>
               </div>
             </div>
           </div>

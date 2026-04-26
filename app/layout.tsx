@@ -1,11 +1,10 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: '--font-sans' });
 
 // ... existing imports ...
 
@@ -90,8 +89,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`font-sans antialiased`}>
+    <html lang="en" className={`dark ${jakarta.variable}`}>
+      <body className="font-sans antialiased relative min-h-screen">
+        {/* Background Glow Effects */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-indigo-500/10 blur-[100px] rounded-full" />
+          <div className="absolute -bottom-[20%] -right-[10%] w-[50%] h-[50%] bg-violet-500/10 blur-[100px] rounded-full" />
+        </div>
         {children}
         <Analytics />
       </body>

@@ -96,7 +96,7 @@ export function PreviewCompare({
             alt="Compressed"
             className="w-screen h-full object-contain bg-black/50"
           />
-          <div className="absolute top-3 right-3 bg-red-500/90 px-3 py-1 rounded-lg text-xs font-medium text-white">
+          <div className="absolute top-3 right-3 bg-indigo-500/90 px-3 py-1 rounded-lg text-xs font-medium text-white">
             Compressed
           </div>
         </motion.div>
@@ -105,9 +105,9 @@ export function PreviewCompare({
         <motion.div
           animate={{ left: `${sliderPosition}%` }}
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-red-400 via-red-500 to-red-600 group-hover:w-2 transition-all"
+          className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-400 via-indigo-500 to-violet-600 group-hover:w-2 transition-all"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full p-2 shadow-lg">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-indigo-500 rounded-full p-2 shadow-lg">
             <div className="flex items-center gap-1">
               <ChevronLeft className="w-4 h-4 text-white" />
               <ChevronRight className="w-4 h-4 text-white" />
@@ -146,13 +146,13 @@ export function PreviewCompare({
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4 + i * 0.1 }}
             className={`glass rounded-lg p-4 text-center ${
-              stat.highlight ? 'glow-red' : ''
+              stat.highlight ? 'glow-indigo' : ''
             }`}
           >
             <p className="text-xs text-muted-foreground mb-1">{stat.label}</p>
             <p
               className={`text-lg font-bold font-mono ${
-                stat.highlight ? 'text-red-400' : 'text-foreground'
+                stat.highlight ? 'text-indigo-400' : 'text-foreground'
               }`}
             >
               {stat.value}
@@ -170,7 +170,7 @@ export function PreviewCompare({
         <Button
           onClick={onDownload}
           disabled={isLoading}
-          className="w-full bg-red-500 hover:bg-red-600 active:bg-red-700 text-white font-semibold py-3 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 glow-red hover:glow-red-intense disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-gradient-to-br from-indigo-500 to-violet-500 hover:opacity-90 active:opacity-80 text-white font-semibold py-3 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 glow-indigo hover:glow-indigo-intense disabled:opacity-50 disabled:cursor-not-allowed border-0"
         >
           <Download className="w-5 h-5" />
           Download Compressed Image

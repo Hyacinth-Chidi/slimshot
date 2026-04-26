@@ -72,7 +72,7 @@ export function ControlsPanel({
                 relative p-3 rounded-xl border text-left transition-all duration-200 outline-none
                 ${format === item.id 
                   ? 'bg-primary/10 border-primary/50 ring-1 ring-primary/20' 
-                  : 'bg-white/[0.02] border-white/5 hover:bg-white/[0.04] hover:border-white/10'
+                  : 'bg-slate-800/30 border-slate-700 hover:bg-slate-800/50 hover:border-slate-600'
                 }
               `}
             >
@@ -133,7 +133,7 @@ export function ControlsPanel({
           onValueChange={(value) => onMaxWidthChange(value[0])}
           className="cursor-pointer py-1"
         />
-        <p className="text-[11px] text-muted-foreground border-t border-white/5 pt-3 mt-2 leading-relaxed">
+        <p className="text-[11px] text-muted-foreground border-t border-slate-700/50 pt-3 mt-2 leading-relaxed">
           Images larger than {maxWidth}px will be resized while maintaining aspect ratio. 
           Smaller images are kept original.
         </p>

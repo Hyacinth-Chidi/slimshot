@@ -82,8 +82,8 @@ export function DropZone({ onImageDrop, isProcessing }: DropZoneProps) {
               className={`
                 mb-8 p-6 rounded-2xl backdrop-blur-md border transition-all duration-300
                 ${isDragActive 
-                  ? 'bg-primary/20 border-primary/50 shadow-[0_0_40px_-10px_rgba(242,78,30,0.5)]' 
-                  : 'bg-white/5 border-white/10 group-hover:bg-white/10 group-hover:border-white/20'
+                  ? 'bg-primary/20 border-primary/50 shadow-[0_0_40px_-10px_rgba(99,102,241,0.5)]' 
+                  : 'bg-slate-800/50 border-slate-700 group-hover:bg-slate-700/50 group-hover:border-slate-600'
                 }
               `}
             >
@@ -109,7 +109,7 @@ export function DropZone({ onImageDrop, isProcessing }: DropZoneProps) {
             {/* Tags */}
             <div className="mt-8 flex gap-2">
               {['PNG', 'JPG', 'WEBP', 'AVIF'].map((fmt) => (
-                <span key={fmt} className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground bg-white/5 px-2 py-1 rounded border border-white/5">
+                <span key={fmt} className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground bg-slate-800/50 px-2 py-1 rounded border border-slate-700">
                   {fmt}
                 </span>
               ))}
@@ -121,17 +121,17 @@ export function DropZone({ onImageDrop, isProcessing }: DropZoneProps) {
             isDragActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
           }`}>
             <div className={`absolute inset-0 bg-gradient-to-b ${
-              isDragActive ? 'from-primary/10 to-transparent' : 'from-white/5 to-transparent'
+              isDragActive ? 'from-primary/10 to-transparent' : 'from-slate-700/20 to-transparent'
             }`} />
             <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
           </div>
 
           {/* Base Background */}
-          <div className="absolute inset-0 bg-[#0A0A0C]/80 backdrop-blur-xl border border-white/10 rounded-3xl -z-10" />
+          <div className="absolute inset-0 bg-slate-800/50 backdrop-blur-xl border border-slate-700 rounded-3xl -z-10" />
           
           {/* Active Border Glow */}
           <div className={`absolute inset-0 rounded-3xl border-2 transition-colors duration-300 pointer-events-none ${
-            isDragActive ? 'border-primary/50' : 'border-transparent group-hover:border-white/10'
+            isDragActive ? 'border-primary/50' : 'border-transparent group-hover:border-slate-700'
           }`} />
         </label>
       </div>
