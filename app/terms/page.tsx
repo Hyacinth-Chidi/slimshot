@@ -80,7 +80,7 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-semibold text-foreground">4. Credits</h2>
             <p>Credits let you use certain features, such as Auto captions.</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>You can get free credits when you set up your account, by watching rewarded ads, and through referrals. We set the amounts and the daily limits, and may change them.</li>
+              <li>You can get free credits when you set up your account, by watching rewarded ads, through referrals, and by claiming them in the App once a day, a week or a month when we offer it. A claim you miss does not carry over. We set the amounts, how often they can be claimed and the daily limits, and may change or stop them.</li>
               <li>The number of credits a feature costs is set by us and may change. Credits are taken when a job starts and given back automatically if the job fails.</li>
               <li>Credits have <strong>no cash value</strong>. They can’t be sold, transferred to another account or exchanged for money, and they are lost when you delete your account.</li>
               <li>We may correct credits given by mistake, and remove credits gained by breaking these terms.</li>

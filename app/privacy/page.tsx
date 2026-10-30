@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Your email address.</strong> With Google sign-in, we receive your Google account’s email address and its account ID. We do not receive your Google password, and we do not store your name or profile photo.</li>
               <li>The <strong>username</strong> you choose, and your <strong>referral code</strong>.</li>
-              <li>Your <strong>credits balance and history</strong>: free credits, credits from rewarded ads and referrals, what you spent them on, and refunds.</li>
+              <li>Your <strong>credits balance and history</strong>: free credits, credits from rewarded ads, referrals and claims, what you spent them on, and refunds.</li>
               <li><strong>Sign-in sessions</strong>, and a random token that identifies this installation of the App on your device. It is stored on our server only as a one-way hash, and the App keeps your sign-in tokens in your phone’s secure storage.</li>
             </ul>
             <p>
@@ -125,7 +125,8 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Photos and videos:</strong> to let you pick the files you want to edit or compress, and to save the results to your gallery. The App never scans or uploads your library.</li>
               <li><strong>Microphone:</strong> only while you record a voiceover in the editor. The recording is saved on your phone. It leaves your phone only if you include your audio tracks when you generate Auto captions (see section 3).</li>
-              <li><strong>Internet:</strong> for your account, Auto captions, ads and downloads.</li>
+              <li><strong>Notifications:</strong> so we can send you news about the App, such as new features. The App asks once; on Android 12 and older, notifications are allowed unless you turn them off. To deliver them, the App gets a notification token from Google’s Firebase Cloud Messaging and sends it to our server, linked to this installation of the App and, if you are signed in, to your account. You can turn notifications off in <strong>Settings → General → Notifications</strong>, which removes the token from our server, or in your phone’s settings.</li>
+              <li><strong>Internet:</strong> for your account, Auto captions, ads, notifications and downloads.</li>
             </ul>
           </section>
 
@@ -144,7 +145,7 @@ export default function PrivacyPolicy() {
             <p>We share information only with:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Service providers</strong> that work on our behalf: our hosting and database providers, cloud storage (Cloudflare R2, where private backups of our database are kept), our email delivery service, and the speech-to-text providers named in section 3.</li>
-              <li><strong>Google</strong>, for Google sign-in and AdMob, as described above.</li>
+              <li><strong>Google</strong>, for Google sign-in, AdMob and Firebase Cloud Messaging (notifications), as described above.</li>
               <li><strong>Authorities</strong>, where the law requires it, or to protect the rights and safety of our users or of us.</li>
               <li>A <strong>buyer or successor</strong>, if SlimShot AI is sold or merged. This policy will continue to apply to your information.</li>
             </ul>
