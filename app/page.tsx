@@ -327,6 +327,9 @@ export default function Home() {
             <a href="/privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
               Privacy Policy
             </a>
+            <a href="/terms" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              Terms of Service
+            </a>
           </div>
           
           <div className="flex gap-4">
